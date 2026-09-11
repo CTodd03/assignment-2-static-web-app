@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TRAINER REGISTRY</title>
+	<style>
+		:root {
+			--ink: #172033;
+			--muted: #64748b;
+			--accent: #ed3a3a;
+			--accent-dark: #5b21b6;
+			--surface: #ffffff;
+			--background: #f5f3ff;
+		}
+
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			color: var(--ink);
+			background: var(--background);
+			font-family: Arial, sans-serif;
+		}
+		nav {
+			align-items: center;
+			background: var(--ink);
+			display: flex;
+			justify-content: space-between;
+			padding: 1rem 7%;
+		}
+		nav a { color: white; text-decoration: none; }
+		.brand { font-size: 1.25rem; font-weight: bold; }
+		.links { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+		.links a:hover, nav a:focus { color: #c8ffe8; text-decoration: underline; }
+		header { margin: 0 auto; max-width: 1100px; padding: 4rem 1.5rem 2rem; text-align: center; }
+		h1 { font-size: clamp(2.2rem, 5vw, 4rem); margin: 0 0 .75rem; }
+		header p { color: var(--muted); font-size: 1.1rem; margin: 0 auto 1.75rem; max-width: 650px; }
+		.search { background: var(--surface); border: 2px solid #ddd6fe; border-radius: 999px; font-size: 1rem; max-width: 560px; padding: .9rem 1.25rem; width: 100%; }
+		main { margin: 0 auto; max-width: 1100px; padding: 1rem 1.5rem 4rem; }
+		.gallery { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+		.card-link { color: inherit; text-decoration: none; }
+		.card { background: var(--surface); border-radius: 18px; box-shadow: 0 10px 25px #312e8118; overflow: hidden; transition: transform .2s; }
+		.card:hover { transform: translateY(-5px); }
+		.card img { display: block; height: 220px; object-fit: cover; width: 100%; }
+		.card-content { padding: 1.1rem; }
+		.card h2 { font-size: 1.25rem; margin: 0 0 .35rem; }
+		.role { color: var(--accent); font-size: .85rem; font-weight: bold; letter-spacing: .04em; text-transform: uppercase; }
+		.card p { color: var(--muted); line-height: 1.5; margin: .65rem 0 0; }
+		footer { color: var(--muted); padding: 1rem; text-align: center; }
+	</style>
+</head>
+<body>
+	<nav aria-label="Main navigation">
+		<a class="brand" href="index.html">HOENN TRAINER REGISTRY</a>
+		<div class="links">
+			<a href="index.html">Home</a>
+			<a href="details.html">Details</a>
+			<a href="about.html">About</a>
+			<a href="new-character-form.html">Register TRAINER Information</a>
+		</div>
+	</nav>
+
+	<header>
+		<h1>HOENN REGION TRAINER REGISTRY</h1>
+		<p>A database of TRAINERS from the HOENN region.</p>
+		<input class="search" type="search" placeholder="Search by name or TYPE..." aria-label="Search characters">
+	</header>
+
+	<main>
+		<section class="gallery" aria-label="Character gallery">
+				<a class="card-link" href="details.html"><article class="card"><img src="image1.png" alt="LEADER ROXANNE"><div class="card-content"><div class="role">ROCK TYPE</div><h2>LEADER ROXANNE</h2><p>GYM LEADER of RUSTBORO CITY.</p></div></article></a>
+				<a class="card-link" href="details.html"><article class="card"><img src="image2.png" alt="PKMN TRAINER BRENDAN"><div class="card-content"><div class="role">VARIETY</div><h2>PKMN TRAINER BRENDAN</h2><p>POKéMON TRAINER from LITTLEROOT TOWN.</p></div></article></a>
+				<a class="card-link" href="details.html"><article class="card"><img src="image3.png" alt="CHAMPION STEVEN"><div class="card-content"><div class="role">STEEL TYPE</div><h2>CHAMPION STEVEN</h2><p>Current CHAMPION of the HOENN POKéMON LEAGUE.</p></div></article></a>
+				<a class="card-link" href="details.html"><article class="card"><img src="image4.png" alt="PKMN TRAINER WALLY"><div class="card-content"><div class="role">VARIETY</div><h2>PKMN TRAINER WALLY</h2><p>POKéMON TRAINER from PETALBURG CITY.</p></div></article></a>
+				<a class="card-link" href="details.html"><article class="card"><img src="image5.png" alt="LEADER NORMAN"><div class="card-content"><div class="role">NORMAL TYPE</div><h2>LEADER NORMAN</h2><p>GYM LEADER of PETALBURG CITY.</p></div></article></a>
+		</section>
+	</main>
+	<footer>&copy; 2002 GAME FREAK</footer>
+</body>
+</html>
